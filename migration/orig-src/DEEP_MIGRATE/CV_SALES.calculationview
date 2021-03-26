@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" schemaVersion="2.3" id="CV_SALES" applyPrivilegeType="NONE" checkAnalyticPrivileges="true" defaultClient="$$client$$" defaultLanguage="$$language$$" hierarchiesSQLEnabled="false" translationRelevant="true" visibility="reportingEnabled" calculationScenarioType="TREE_BASED" dataCategory="CUBE" enforceSqlExecution="false" executionSemantic="UNDEFINED" outputViewType="Aggregation">
+  <origin/>
+  <descriptions defaultDescription="CV_SALES"/>
+  <localVariables/>
+  <variableMappings/>
+  <informationModelLayout relativeWidthScenario="32"/>
+  <dataSources>
+    <DataSource id="SALES_SDI" type="DATA_BASE_TABLE">
+      <viewAttributes allViewAttributes="true"/>
+      <columnObject schemaName="DEEP" columnObjectName="SALES_SDI"/>
+    </DataSource>
+  </dataSources>
+  <calculationViews/>
+  <logicalModel id="SALES_SDI">
+    <descriptions/>
+    <attributes>
+      <attribute id="ID" order="1" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="ID"/>
+        <keyMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="ID"/>
+      </attribute>
+      <attribute id="ORDID" order="2" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="ORDID"/>
+        <keyMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="ORDID"/>
+      </attribute>
+      <attribute id="ORDER_DATE" order="3" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="ORDER_DATE"/>
+        <keyMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="ORDER_DATE"/>
+      </attribute>
+      <attribute id="REQ_DATE" order="4" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="REQ_DATE"/>
+        <keyMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="REQ_DATE"/>
+      </attribute>
+      <attribute id="CUSTID" order="5" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CUSTID"/>
+        <keyMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="CUSTID"/>
+      </attribute>
+      <attribute id="MATID" order="6" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="MATID"/>
+        <keyMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="MATID"/>
+      </attribute>
+      <attribute id="EMPID" order="7" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="EMPID"/>
+        <keyMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="EMPID"/>
+      </attribute>
+      <attribute id="UNIT" order="9" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="UNIT"/>
+        <keyMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="UNIT"/>
+      </attribute>
+      <attribute id="CURRENCY" order="11" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CURRENCY"/>
+        <keyMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="CURRENCY"/>
+      </attribute>
+      <attribute id="YR" order="12" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="YR"/>
+        <keyMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="YR"/>
+      </attribute>
+    </attributes>
+    <calculatedAttributes/>
+    <privateDataFoundation>
+      <tableProxies/>
+      <joins/>
+      <layout>
+        <shapes/>
+      </layout>
+    </privateDataFoundation>
+    <baseMeasures>
+      <measure id="ORDER_QTY" order="8" aggregationType="sum" measureType="simple">
+        <descriptions defaultDescription="ORDER_QTY"/>
+        <measureMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="ORDER_QTY"/>
+      </measure>
+      <measure id="PRICE" order="10" aggregationType="sum" measureType="simple">
+        <descriptions defaultDescription="PRICE"/>
+        <measureMapping schemaName="DEEP" columnObjectName="SALES_SDI" columnName="PRICE"/>
+      </measure>
+    </baseMeasures>
+    <calculatedMeasures/>
+    <restrictedMeasures/>
+    <localDimensions/>
+  </logicalModel>
+  <layout>
+    <shapes>
+      <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+        <upperLeftCorner x="40" y="85"/>
+        <rectangleSize height="0" width="0"/>
+      </shape>
+    </shapes>
+  </layout>
+</Calculation:scenario>

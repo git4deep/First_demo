@@ -1,0 +1,8 @@
+{
+    "DEEP_MIGRATE::SALES_SDI": {
+        "target": {
+            "schema": "DEEP",
+            "object": "SALES_SDI"
+        }
+    }
+}

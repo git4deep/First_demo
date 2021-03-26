@@ -1,0 +1,14 @@
+{
+    "role": {
+        "name": "DEEP_MIGRATE::PublicAccessObjects#",
+        "object_privileges": [
+            {
+                "name": "DEEP_MIGRATE::CV_SALES",
+                "type": "VIEW",
+                "privileges_with_grant_option": [
+                    "SELECT"
+                ]
+            }
+        ]
+    }
+}

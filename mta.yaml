@@ -1,0 +1,25 @@
+_schema-version: 2.0
+ID: DEEP_DU
+description: 
+version: 1.0.0
+
+modules:
+  - name: DEEP_DU-db
+    type: hdb
+    path: db
+    requires:
+      - name: DEEP_DU-hdi
+        properties:
+            TARGET_CONTAINER: ~{service-name}
+      - name: synonym-grantor-service
+
+
+resources:
+  - name: DEEP_DU-hdi
+    type: com.sap.xs.hdi-container
+    properties:
+        service-name: ${service-name}
+  - name: synonym-grantor-service
+    type: org.cloudfoundry.existing-service
+    parameters:
+        service-name: synonym-grantor-service

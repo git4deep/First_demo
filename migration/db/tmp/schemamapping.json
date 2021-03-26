@@ -1,0 +1,16 @@
+{
+    "schemaMapping": [
+        {
+            "AUTHORING_SCHEMA": "SAP_ECC",
+            "PHYSICAL_SCHEMA": "ZME_ECC"
+        },
+        {
+            "AUTHORING_SCHEMA": "Training",
+            "PHYSICAL_SCHEMA": "TRAINING"
+        },
+        {
+            "AUTHORING_SCHEMA": "DEV_SCHEMA_00",
+            "PHYSICAL_SCHEMA": "QA_SCHEMA_00"
+        }
+    ]
+}

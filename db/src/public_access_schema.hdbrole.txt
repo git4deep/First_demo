@@ -1,0 +1,13 @@
+{
+    "role": {
+        "name": "DEEP_MIGRATE::PublicAccessSchema",
+        "schema_privileges": [
+            {
+                "privileges": [
+                    "SELECT",
+                    "EXECUTE"
+                ]
+            }
+        ]
+    }
+}
